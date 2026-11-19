@@ -32,9 +32,9 @@ jobs:
       - name: Download project source
         run: |
           curl --fail --location --silent --show-error \
-            https://github.com/mjlathbury/ApkGame/releases/download/v1.0.0/HouseRules_Android_Offline_Project.zip \
+            https://github.com/mjlathbury/ApkGame/releases/download/v1.0.0/HouseRules_Android_Offline_Project_v1.0.1.zip \
             --output HouseRules_Android_Offline_Project.zip
-          echo "118bd42694754df8b50d33aec1d9724dc6aed392cb85cd138dde4920f7b83d19  HouseRules_Android_Offline_Project.zip" | sha256sum --check
+          echo "535896199f53753c1fba00cc0e0362976890388861dfc3202e988bf0ee057030  HouseRules_Android_Offline_Project.zip" | sha256sum --check
           mkdir project
           unzip -q HouseRules_Android_Offline_Project.zip -d project
 
